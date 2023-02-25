@@ -113,11 +113,11 @@ function App() {
             SHOW/HIDE CURRENT WORD
           </button>
         </p>
-        <div>
+        <div className="container">
           <div className="image-container">
             <img src={Hx[countWrong]} alt="Loading..." />
           </div>
-          <table>
+          <table className="keyboard">
             <tbody>
               <tr>
                 <td>

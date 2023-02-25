@@ -22,8 +22,18 @@ button {
   border-radius: 7px;
   background-color: rgb(27, 196, 58);
   padding-top: 6px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
   padding-bottom: 2px;
   align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.keyboard {
+  padding-left: 20px;
 }
