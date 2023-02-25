@@ -79,7 +79,7 @@ function App() {
       let c = countWrong + 1;
       setCountWrong(c);
       if (c === 11) {
-        alert("Sorry, you lost the game!");
+        alert(`Sorry, you lost the game! Correct word is ${word_ini}`);
         window.location.reload(false);
       }
     }
