@@ -1,0 +1,148 @@
+/* Import the typeface */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+/* Set the main body styles: */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+}
+
+/* Styles for the container holding all components:
+Set minimum and max dimensions, centre, and have a background colour: */
+.main-container {
+  align-items: center;
+  max-width: 600px;
+  margin: 30px auto;
+  min-height: 300px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* Set the Header component to have flex on the header and Help button*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the Help component */
+/* Remove and set margins, padding, and font-size: */
+h3 {
+  margin: 0;
+}
+.help-list {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.help-list li {
+  font-size: 16px;
+}
+
+/* Style the Results component */
+.results {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #410897;
+  color: white;
+  padding: 5px;
+}
+.results p {
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Styles for the images and hidden word: */
+
+/* Set the container holding both to have flex and to be underneath 
+one another. Set all elements to be centred: */
+.state-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Set the width and margins of the images: */
+.state-img {
+  width: 150px;
+  margin: 20px;
+}
+/* Set the word's font-size and make it monospace so it doesn't
+jump when correct letters are guessed: */
+.state-dash {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace;
+  margin: 20px;
+}
+
+/* Style both large buttons to be blue, borderless, and rounded: */
+.btn {
+  background: #06469a;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+/* Make the Start Game button centred: */
+#newGame {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Styles for the keyboard component: */
+
+/* Centre the container holding the key buttons, and set flex
+on all the keys inside: */
+.alpha-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 500px;
+  margin: 40px auto 10px auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* Each container around each button is given space to separate it 
+from the other buttons: */
+.icon {
+  padding: 2px;
+  margin: 2px;
+}
+/* Style the individual keys: */
+.icon button {
+  font-size: 20px;
+  background-color: #06469a;
+  color: white;
+  width: 1.9rem;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 2px;
+  box-shadow: 1px 1px 3px gray;
+  border: none;
+}
+/* Make the buttons light blue on hover: */
+.icon button:hover {
+  background-color: rgb(93, 182, 221);
+}
+/* Change the colours of the buttons if they've
+been correctly or incorrectly guessed, or if the game is over: */
+.button-green {
+  background-color: #40e45b !important;
+}
+.button-red {
+  background-color: rgb(219, 84, 84) !important;
+}
+.button-grey {
+  background-color: grey !important;
+}
